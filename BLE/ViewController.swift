@@ -44,10 +44,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         if peripheral.name?.contains("raspberrypi") == true {
             print (advertisementData)
             connect(toPeripheral: peripheral)
-//            print (peripheral.name ?? "no name")
-//            centralManager.stopScan()
-//            central.connect(peripheral, options: nil)
-//            myPeripheral = peripheral
         }
     }
     
@@ -63,7 +59,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        print ("connected \(peripheral.name)")
+        print ("connected \(peripheral.name ?? "peripheral")")
         peripheral.discoverServices(nil)
         peripheral.delegate = self
         UserDefaults.standard.setValue(peripheral.identifier.uuidString, forKey: "PUUID")
@@ -93,7 +89,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
                     }
                     else {
                         peripheral.writeValue(Data([byteToSend]), for: char, type: CBCharacteristicWriteType.withResponse)
-//                        peripheral.writeValue(Data.init(_: [01]), for: char, type: CBCharacteristicWriteType.withResponse)
                     }
                 }
                 else if char.uuid == charThermometerData {
@@ -115,9 +110,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         if let val = characteristic.value {
-            let tmpVal = val
-            print (tmpVal) // Need to display human readble value
-            print ("\([UInt8](val))")
+//            print (val)
+//            print ("\([UInt8](val))")
             if let string = String(bytes: val, encoding: .utf8) {
                 print(string)
                 tempLabel.text = String(string)
