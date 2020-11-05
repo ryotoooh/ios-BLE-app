@@ -1,6 +1,9 @@
-#  iOS BLE app for Raspberry Pi with cputemp GATT server
+#  iOS BLE App
 
-A single page simple iOS application. The purpose of this prject is understanding read and write values with BLE GATT server. The GATT server is from https://github.com/Douglas6/cputemp
+A single page iOS application communicating with a Raspberry Pi GATT server. The purposes of this project are reading and writing values with a GATT server via BLE (Bluetooth Low Energy). 
+
+## GATT Server
+The sample GATT server is [CPUTemp](https://github.com/Douglas6/cputemp) by Douglas Otwell.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
