@@ -15,6 +15,7 @@
 		A3443707254E98BD00F1F0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3443705254E98BD00F1F0D5 /* LaunchScreen.storyboard */; };
 		A3443712254E98BE00F1F0D5 /* BLETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3443711254E98BE00F1F0D5 /* BLETests.swift */; };
 		A344371D254E98BE00F1F0D5 /* BLEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344371C254E98BE00F1F0D5 /* BLEUITests.swift */; };
+		A344372F254E98F200F1F0D5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A344372E254E98F200F1F0D5 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A3443718254E98BE00F1F0D5 /* BLEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A344371C254E98BE00F1F0D5 /* BLEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEUITests.swift; sourceTree = "<group>"; };
 		A344371E254E98BE00F1F0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A344372E254E98F200F1F0D5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A344372F254E98F200F1F0D5 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				A3443710254E98BE00F1F0D5 /* BLETests */,
 				A344371B254E98BE00F1F0D5 /* BLEUITests */,
 				A34436F8254E98BB00F1F0D5 /* Products */,
+				A344372D254E98F200F1F0D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				A344371E254E98BE00F1F0D5 /* Info.plist */,
 			);
 			path = BLEUITests;
+			sourceTree = "<group>";
+		};
+		A344372D254E98F200F1F0D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A344372E254E98F200F1F0D5 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,12 +449,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVGR5C58K9;
 				INFOPLIST_FILE = BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.BLE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryotahisanabe.BLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,12 +469,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVGR5C58K9;
 				INFOPLIST_FILE = BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.BLE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryotahisanabe.BLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
