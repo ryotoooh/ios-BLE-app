@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A31305212553EBF4006095D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A31305222553ED10006095D0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A34436F7254E98BB00F1F0D5 /* BLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34436FA254E98BB00F1F0D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A34436FC254E98BB00F1F0D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,8 @@
 		A34436EE254E98BB00F1F0D5 = {
 			isa = PBXGroup;
 			children = (
+				A31305222553ED10006095D0 /* .gitignore */,
+				A31305212553EBF4006095D0 /* README.md */,
 				A34436F9254E98BB00F1F0D5 /* BLE */,
 				A3443710254E98BE00F1F0D5 /* BLETests */,
 				A344371B254E98BE00F1F0D5 /* BLEUITests */,
